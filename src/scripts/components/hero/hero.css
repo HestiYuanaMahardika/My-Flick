@@ -1,0 +1,87 @@
+@media screen and (max-width: 768px) {
+    .hero-background-image-filter {
+        height: 100%;
+    }
+
+    .text-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .text-section h2 {
+        font-size: 1.3rem;
+    }
+
+    .hero-search a.btn {
+        padding: 1rem 3rem !important;
+    }
+
+    .card-movie {
+        width: 135px !important;
+    }
+
+    movie-list {
+        flex-wrap: unset !important;
+        justify-content: start !important;
+    }
+
+    .wrapper-image {
+        min-height: min-content !important;
+    }
+
+    .card-section {
+        padding: 30px;
+    }
+}
+
+#typing {
+    width: auto;
+    color: #676767;
+    float: center;
+    font-size: 50px;
+    margin: 0 auto;
+    padding: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 7s steps(24) 1s infinite;
+}
+
+#typing span {
+    color: #000000;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 460px;
+    }
+}
+
+
+.clock {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #febd17;
+    font-size: 20px;
+    font-family: Impact;
+    letter-spacing: 7px;
+}
+
+.gotopbtn{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: #FFA500;
+    bottom: 40px;
+    right: 50px;
+  
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 22px;
+  }

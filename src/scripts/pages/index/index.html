@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="favicon.ico">
+  <title>Home | MyFlick</title>
+
+  <style>
+    footer {
+      position: relative;
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: space-between;
+      padding: 50px 100px;
+      flex-wrap: wrap;
+      background-color: #111;
+    }
+
+    footer .content {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+
+    footer .content .sect {
+      margin-right: 30px;
+    }
+
+    footer .content .aboutus {
+      width: 40%;
+    }
+
+    footer .content h2 {
+      position: relative;
+      color: #fff;
+      font-weight: 500;
+      margin-bottom: 15px;
+    }
+
+    footer .content h2::before {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 50px;
+      height: 2px;
+      background-color: rgb(255, 0, 64);
+    }
+
+    footer .content .aboutus p {
+      color: #999;
+      font-weight: 200;
+      margin-bottom: 15px;
+    }
+
+    footer .content .aboutus ul {
+      display: flex;
+    }
+
+    footer .content .aboutus ul li {
+      list-style: none;
+      margin-right: 20px;
+    }
+
+    footer .content .aboutus ul li a {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      background-color: #222;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    footer .content .aboutus ul li a:hover {
+      background-color: #f00;
+    }
+
+    footer .content .aboutus ul li a .fa {
+      color: #fff;
+      font-size: 20px;
+    }
+
+    footer .content .quicklinks {
+      position: relative;
+      width: 25%;
+      padding: 0px 20px;
+    }
+
+    footer .content .quicklinks ul li {
+      list-style: none;
+    }
+
+    footer .content .quicklinks ul li a {
+      color: #999;
+      display: inline-block;
+      text-decoration: none;
+      margin-bottom: 10px;
+    }
+
+    footer .content .quicklinks ul li a:hover {
+      color: #f00;
+    }
+
+    footer .content .contactus {
+      width: calc(35% - 60px);
+      margin-right: 0 !important;
+    }
+
+    footer .content .contactus ul {
+      position: relative;
+    }
+
+    footer .content .contactus ul li {
+      display: flex;
+      margin-bottom: 20px;
+      list-style: none;
+    }
+
+    footer .content .contactus ul li span {
+      color: #999;
+    }
+
+    footer .content .contactus ul li span:nth-child(1) {
+      color: #fff;
+      font-size: 20px;
+      margin-right: 10px;
+    }
+
+    footer .content .contactus ul li a {
+      color: #999;
+      text-decoration: none;
+      letter-spacing: 2px;
+    }
+
+    footer .content .contactus ul li a:hover {
+      color: #fff;
+    }
+
+    .copyright {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      background-color: #181818;
+      padding: 5px 10px;
+    }
+
+    .copyright p {
+      font-size: 20px;
+      letter-spacing: 1px;
+      color: #999;
+    }
+
+    .copyright p a {
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: 500;
+      color: #fff;
+      text-transform: uppercase;
+    }
+
+    .copyright p a:hover {
+      color: rgb(255, 0, 76);
+    }
+
+    @media (max-width: 1000px) {
+      footer {
+        padding: 40px;
+      }
+
+      footer .content {
+        flex-direction: column;
+      }
+
+      footer .content .sect {
+        margin-right: 30px;
+        margin-bottom: 20px;
+      }
+
+      footer .content .aboutus {
+        width: 100%;
+      }
+
+      footer .content .quicklinks {
+        width: 100%;
+        padding: 0;
+      }
+
+      footer .content .contactus {
+        width: 100%;
+      }
+
+      .copyright {
+        padding: 0;
+      }
+
+      .copyright p {
+        font-size: 14px;
+      }
+
+      .copyright p a {
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav-bar></nav-bar>
+  <main>
+    <!-- Hero Section -->
+    <hero-section> </hero-section>
+    <trending-section></trending-section>
+    <popular-section></popular-section>
+
+  </main>
+  <footer>
+    <div class="content">
+      <div class="sect aboutus">
+        <h2>My Flick</h2>
+        <p>My Flick is a video website created for users to watch and share thriller videos that will be shown in
+          cinema.</p>
+        <ul>
+          <li><a href="https://web.facebook.com/hesti.yuana.94/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          </li>
+          <li><a href="https://github.com/hestiyuanamahardika"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+          <li><a href="https://instagram.com/hestiyuanam"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.youtube.com/channel/UCN6dc_-5lgKrw-niuBE0xTA"><i class="fa fa-youtube"
+                aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+      <div class="sect quicklinks">
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">FAQ</a></li>
+          <li><a href="">Terms & Conditions</a></li>
+          <li><a href="">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="sect contactus">
+        <h2>Contact Us</h2>
+        <ul>
+          <li>
+            <span>📍 Sukamaju Street<br>Bandar Lampung,<br>Indonesia</span>
+          </li>
+          <li>
+            <p><a href="mailto:hestiyuana9@gmail.com">✉️ hestiyuana9@gmail.com</a></p>
+          </li>
+          <li>
+            <p><a href="">📞 +62 896-3407-0000</a><br>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <div class="copyright">
+    <p>Copyright &copy; 2022 <a href="https://github.com/hestiyuanamahardika" target="blank">Hesti Yuana Mahardika.
+      </a>Dicoding Academy</p>
+  </div>
+</body>
+
+</html>
